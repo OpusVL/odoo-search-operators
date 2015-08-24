@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="assets_backend" name="global_search_operators assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/global_search_operators/static/src/js/search.js"></script>
+            </xpath>
+        </template>
+    </data>
+</openerp>
