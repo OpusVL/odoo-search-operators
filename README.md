@@ -9,6 +9,8 @@ Adds four global search operators for char fields to Odoo by extending `instance
 
 These can be mixed in with other operators as usual.
 
+Extra handling was also needed in the `build_search_data` function prefix/suffix wild cards to the user-inputted strings.
+
 ## TODO:
 Remove cruft from search.js file, as it is currently just a copy paste of the core one, with a few lines added to it.
 
