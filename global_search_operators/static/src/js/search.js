@@ -1,3 +1,6 @@
+// TODO: Remove all cruft/unchanged things from this file
+// Only changes in functions starting on lines 2213 and 660
+
 (function() {
 
 var instance = openerp;
