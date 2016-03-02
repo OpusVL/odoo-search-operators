@@ -3,6 +3,8 @@ odoo-search-operators
 
 # global_search_operators
 
+[8.0]
+
 Adds four global search operators for char fields to Odoo by extending `instance.web.search.ExtendedSearchProposition.Char`. These include:
 * `starts with` / `does not start with`
 * `ends with` / `does not end with`
