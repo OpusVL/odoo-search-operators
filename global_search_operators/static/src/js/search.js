@@ -17,7 +17,11 @@ instance.web.SearchView.include({
                         if (searchProp.length > 0) {
                             searchProp = searchProp.find(':selected');
                             var result = domain[0][2];
-                            switch(searchProp.text()) {
+                            // Remove 'contains' if it is followed by text
+                            // due to Odoo bug in 'Search More' search views
+                            // automatically prefixing searchProp.text() with 'contains'
+                            // Resulting in the following cases not working
+                            switch(searchProp.text().replace(/^contains(.)/, '$1')) {
                                 case 'starts with':
                                     domain[0][2] = result + '%';
                                     break;
